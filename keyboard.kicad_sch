@@ -4,6 +4,9 @@
 	(generator_version "8.0")
 	(uuid "98cd9e52-9874-4a9c-90c6-5b554337b191")
 	(paper "A3")
+	(title_block
+		(title "Custom Keyboard for my macbook")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
@@ -6200,6 +6203,30 @@
 		)
 		(uuid "ff7eb29b-adc9-4959-8b00-3074e3fb1c86")
 	)
+	(rectangle
+		(start 194.31 174.625)
+		(end 306.07 205.74)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c27b79d0-3ed3-4842-8aee-1ef0ba2d3c0f)
+	)
+	(rectangle
+		(start 187.325 43.18)
+		(end 382.905 151.765)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ecdd895e-3e0d-48f6-8792-5d8182d86529)
+	)
 	(text "fuse to provide constant +5V\n"
 		(exclude_from_sim no)
 		(at 55.88 21.59 0)
@@ -6209,6 +6236,16 @@
 			)
 		)
 		(uuid "0c965438-7cb0-407a-8a41-ce7a0a1a181f")
+	)
+	(text "stabilizer for keys (1.5 u)\n"
+		(exclude_from_sim no)
+		(at 290.195 194.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2db7bbe3-80e8-44c0-a0ae-d9934f13f9db")
 	)
 	(text "protects against ASD spikes\n"
 		(exclude_from_sim no)
@@ -7067,70 +7104,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 381.635 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "03c395c0-9726-4498-95c2-f228e066257b")
-		(property "Reference" "S4"
-			(at 387.985 117.9829 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MX_stab"
-			(at 387.985 120.5229 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
-			(at 381.635 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 381.635 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cherry MX-style stabilizer"
-			(at 381.635 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "keyboard"
-				(path "/98cd9e52-9874-4a9c-90c6-5b554337b191"
-					(reference "S4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
 		(at 325.12 98.425 0)
 		(unit 1)
@@ -7827,70 +7800,6 @@
 			(project "keyboard"
 				(path "/98cd9e52-9874-4a9c-90c6-5b554337b191"
 					(reference "S10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 381.635 102.235 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0946bebe-1b8e-460f-8490-d560369a850f")
-		(property "Reference" "S3"
-			(at 387.985 100.8379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MX_stab"
-			(at 387.985 103.3779 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_1.75u"
-			(at 381.635 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 381.635 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cherry MX-style stabilizer"
-			(at 381.635 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "keyboard"
-				(path "/98cd9e52-9874-4a9c-90c6-5b554337b191"
-					(reference "S3")
 					(unit 1)
 				)
 			)
@@ -20149,70 +20058,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 179.705 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e17fcf07-288a-4849-96de-41bc00179d93")
-		(property "Reference" "S5"
-			(at 186.055 120.5229 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MX_stab"
-			(at 186.055 123.0629 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
-			(at 179.705 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.705 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cherry MX-style stabilizer"
-			(at 179.705 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "keyboard"
-				(path "/98cd9e52-9874-4a9c-90c6-5b554337b191"
-					(reference "S5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Small")
 		(at 219.075 144.78 90)
 		(unit 1)
@@ -20295,70 +20140,6 @@
 			(project "keyboard"
 				(path "/98cd9e52-9874-4a9c-90c6-5b554337b191"
 					(reference "D60")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 173.99 100.965 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e426c70c-fbd6-4790-aa9c-e5a4c16c2c00")
-		(property "Reference" "S2"
-			(at 180.34 99.5679 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MX_stab"
-			(at 180.34 102.1079 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_1.75u"
-			(at 173.99 100.965 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 100.965 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cherry MX-style stabilizer"
-			(at 173.99 100.965 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "keyboard"
-				(path "/98cd9e52-9874-4a9c-90c6-5b554337b191"
-					(reference "S2")
 					(unit 1)
 				)
 			)
@@ -22269,70 +22050,6 @@
 			(project "keyboard"
 				(path "/98cd9e52-9874-4a9c-90c6-5b554337b191"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 357.505 38.735 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff915177-5c3f-4c28-9366-947aadcd887d")
-		(property "Reference" "S1"
-			(at 363.855 37.3379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MX_stab"
-			(at 363.855 39.8779 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_1.5u"
-			(at 357.505 38.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 357.505 38.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cherry MX-style stabilizer"
-			(at 357.505 38.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "keyboard"
-				(path "/98cd9e52-9874-4a9c-90c6-5b554337b191"
-					(reference "S1")
 					(unit 1)
 				)
 			)
